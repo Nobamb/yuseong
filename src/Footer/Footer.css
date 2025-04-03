@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+footer {
+  height: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.footerInner {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+}
+
+.footerInner > .footerContent {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerInner > .footerContent > .footerText {
+  width: 410px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerInner > .footerContent > .footerText > .footerTextTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerInner > .footerContent > .footerText > .footerTextTop > span {
+  font-size: 16px;
+  cursor: pointer;
+  font-family: NotoSansKR;
+  color: #828282;
+}
+
+.footerInner > .footerContent > .footerText > .footerTextBottom {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footerInner
+  > .footerContent
+  > .footerText
+  > .footerTextBottom
+  > .footerTextBottomInfo {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footerInner > .footerContent > .footerText > .footerTextBottom > h3 {
+  font-size: 20px;
+  font-family: NotoSansKR;
+}
+
+.footerInner
+  > .footerContent
+  > .footerText
+  > .footerTextBottom
+  > .footerTextBottomInfo
+  > li {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.footerInner
+  > .footerContent
+  > .footerText
+  > .footerTextBottom
+  > .footerTextBottomInfo
+  > li
+  > h4 {
+  width: 70px;
+  font-family: NotoSansKR;
+}
+
+.footerInner
+  > .footerContent
+  > .footerText
+  > .footerTextBottom
+  > .footerTextBottomInfo
+  > li
+  > p {
+  font-family: NotoSansKR;
+  color: #828282;
+}
+
+.footerInner > .copyright {
+  width: 100%;
+  height: 40px;
+  background-color: #ec7aa0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerInner > .copyright > p {
+  font-size: 16px;
+  color: #fff;
+  font-family: NotoSansKR;
+  font-weight: 400;
+}

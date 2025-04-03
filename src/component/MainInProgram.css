@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+.mainInProgram {
+  width: 100%;
+  height: 835px;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.mainInProgramTitle {
+  width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #333;
+}
+
+.mainInProgramTitle > h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.mainInProgramTitle > a {
+  color: #ec7aa0;
+  transition: all 0.3s;
+}
+
+.mainInProgramTitle > a:hover {
+  transform: scale(1.3);
+}
+
+.programBox {
+  width: 100%;
+  max-width: 1280px;
+  height: 515px;
+  margin-top: 140px;
+  display: flex;
+}
+
+.programBox > article {
+  width: 56.25%;
+  max-width: 720px;
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.programBox > article > ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.programBox > article > ul > li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.programBox > article > ul > li.on {
+  opacity: 1;
+  z-index: 100;
+}
+
+.programBox > article > ul > li {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.programBox > article > ul > li > ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.programBox > article > ul > li > ul > li {
+  transition: all 0.3s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programBox > article > ul > li > ul > li > img {
+  min-height: 100%;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.programBox > article > .whiteBox {
+  width: 100%;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 80%);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programBox > article > .whiteBox > .programType {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  width: 110px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "NotoSansKR-Regular";
+  border-radius: 9999px;
+  font-size: 12px;
+}
+
+.programBox > article > .whiteBox > .programInfo {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.programBox > article > .whiteBox > .programInfo > h3 {
+  font-weight: 400;
+}
+
+.programBox > article > .whiteBox > .programInfo > p {
+  font-family: "NotoSansKR-Regular";
+  white-space: pre-line;
+}
+.programBox > article > .whiteBox > .indexMoveBox {
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.programBox > article > .whiteBox > .indexMoveBox > ul {
+  width: 33%;
+  max-width: 240px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.programBox > article > .whiteBox > .indexMoveBox > ul > li {
+  cursor: pointer;
+  height: 100%;
+  background-color: #828282;
+}
+
+.programBox > article > .whiteBox > .indexMoveBox > .moveButton {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.programBox > article > .whiteBox > .indexMoveBox > .moveButton > svg {
+  font-size: 24px;
+}
+
+.programBox > .programList {
+  width: 43.75%;
+  max-width: 560px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+}
+
+.programBox > .programList > li {
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  justify-self: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 25%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.programBox > .programList > li > div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programBox > .programList > li h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.programBox > .programList > li:last-child h4 {
+  font-size: 12px;
+}
+
+.programBox > .programList > li .imgBox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.programBox > .programList > li img {
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.mainInProgram > .animationBox {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  position: absolute;
+  z-index: -1;
+  top: calc(100% - 500px);
+  overflow: hidden;
+}
+.mainInProgram .water {
+  width: calc(100% + 100px);
+  position: relative;
+  left: -50px;
+  animation: 2s water alternate infinite;
+}
+
+.mainInProgram .wave {
+  position: absolute;
+  z-index: -1;
+}
+
+.mainInProgram .wave1 {
+  width: 460px;
+  top: 0;
+  left: 50%;
+  animation: 2s wave1 infinite alternate;
+}
+
+.mainInProgram .wave2 {
+  right: 0%;
+  top: 100px;
+  width: 350px;
+  transform: rotateY(180deg);
+  animation: 2s wave2 infinite alternate;
+}
+
+@keyframes water {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes wave1 {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    transform: translateY(100px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotateY(180deg);
+  }
+}

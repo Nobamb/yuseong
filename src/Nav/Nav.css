@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+nav {
+  width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  position: fixed;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.5px #333 solid;
+  border-bottom: 0.5px #333 solid;
+  z-index: 1000;
+  perspective: 1000px;
+}
+
+nav.navScrolled {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
+nav > ul {
+  z-index: 100;
+  display: flex;
+  gap: 50px;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+nav > ul > li {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+nav > ul > li > a > span {
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+nav > ul > li > a > span.activeBefore {
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+  color: #007a7f;
+}
+nav > ul > li > a > span.activeAfter {
+  position: absolute;
+  top: 100px;
+  transform: translateY(-50%);
+  opacity: 0;
+  color: #ec7aa0;
+}
+nav > ul > li.mainActive > a > span.activeBefore {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+nav > ul > li.mainActive > a > span.activeAfter {
+  top: 50%;
+  opacity: 1;
+}
+
+nav > .subMenu {
+  z-index: 1;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 100%;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: center top;
+}
+
+nav > .subMenu.subActive {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+nav > .subMenu > ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+nav > .subMenu > ul > li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 0.5px solid #333;
+  border-bottom: 0.5px solid #333;
+  z-index: 1;
+}
+
+nav > .subMenu > ul > li.on {
+  z-index: 100;
+}
+
+nav > .subMenu > ul > li > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+nav > .subMenu > ul > li > ul > li {
+}
+
+nav > .subMenu > ul > li > ul > li > a {
+  transition: all 0.3s;
+}
+nav > .subMenu > ul > li > ul > li > a:hover {
+  color: #ec7aa0;
+}
